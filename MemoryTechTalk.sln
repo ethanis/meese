@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MooseLeaks", "MooseLeaks\MooseLeaks.csproj", "{329AF186-0767-4869-B3D8-B71FDAF56FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meese", "Meese\Meese.csproj", "{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{329AF186-0767-4869-B3D8-B71FDAF56FC5}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{329AF186-0767-4869-B3D8-B71FDAF56FC5}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{329AF186-0767-4869-B3D8-B71FDAF56FC5}.Release|iPhone.ActiveCfg = Release|iPhone
+		{329AF186-0767-4869-B3D8-B71FDAF56FC5}.Release|iPhone.Build.0 = Release|iPhone
+		{329AF186-0767-4869-B3D8-B71FDAF56FC5}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{329AF186-0767-4869-B3D8-B71FDAF56FC5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{329AF186-0767-4869-B3D8-B71FDAF56FC5}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{329AF186-0767-4869-B3D8-B71FDAF56FC5}.Debug|iPhone.Build.0 = Debug|iPhone
+		{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}.Release|iPhone.Build.0 = Release|iPhone
+		{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A5FE02DB-0DFA-4AE9-977E-32BE449B187A}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
