@@ -15,11 +15,11 @@ namespace MooseLeaks
             base.ViewDidLoad();
             View.BackgroundColor = UIColor.White;
 
-            NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Moose", UIBarButtonItemStyle.Plain, ShowParentMoose), true);
+            NavigationItem.SetLeftBarButtonItem(new UIBarButtonItem("Moose", UIBarButtonItemStyle.Plain, ShowMoose), true);
             NavigationItem.SetRightBarButtonItem(new UIBarButtonItem("Count", UIBarButtonItemStyle.Plain, ShowCounterView), true);
         }
 
-        void ShowParentMoose(object sender, EventArgs e)
+        void ShowMoose(object sender, EventArgs e)
         {
             Interlocked.Increment(ref CurrentCounter);
             if (CounterChanged != null)
@@ -84,7 +84,6 @@ namespace MooseLeaks
             removeButton.SetTitle("Close", UIControlState.Normal);
             AddSubview(removeButton);
 
-
             Owner.CounterChanged += Owner_CounterChanged;
             removeButton.TouchUpInside += RemoveButton_TouchUpInside;
         }
@@ -116,6 +115,7 @@ namespace MooseLeaks
         void RemoveButton_TouchUpInside(object sender, EventArgs e)
         {
             RemoveFromSuperview();
+            removeButton.TouchUpInside -= Owner_CounterChanged;
 
             this.Dispose();
             GC.Collect();

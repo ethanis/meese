@@ -11,23 +11,21 @@ namespace Meese
     {
         const float Padding = 5.0f;
         public static MeeseCollectionDataSource Instance { get; protected set; }
-        public readonly MeeseViewController Owner;
-        //public readonly WeakReference<MeeseViewController> Owner;
-        //public MeeseViewController Owner
-        //{
-        //    get
-        //    {
-        //        MeeseViewController target;
-        //        Owner.TryGetTarget(out target);
-        //        return target;
-        //    }
-        //}
+        private WeakReference<MeeseViewController> OwnerWR;
+        public MeeseViewController Owner
+        {
+            get
+            {
+                MeeseViewController tartget = null;
+                OwnerWR.TryGetTarget(out tartget);
+                return tartget;
+            }
+        }
 
         public MeeseCollectionDataSource(MeeseViewController owner)
         {
             Instance = this;
-            Owner = owner;
-            //Owner = new WeakReference<MeeseViewController>(owner);
+            OwnerWR = new WeakReference<MeeseViewController>(owner);
         }
 
         public override UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
